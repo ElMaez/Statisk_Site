@@ -3,7 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Global Menu */
+ul {
+  text-decoration: none;
+  
+}
 
+/*  */
 main {
   outline: dashed 1px red;
 }
