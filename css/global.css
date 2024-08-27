@@ -1,3 +1,11 @@
 :root {
-  --MenuFontSize: 2rem;
+  /* Font Size */
+  --MenuFontSize: 1.3rem;
+
+  /* Padding */
+  --rem1: 1rem;
+
+  /* Colors */
+  --ColorMenu: purple;
+  --HoverMenu: red;
 }
