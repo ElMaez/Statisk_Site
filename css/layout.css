@@ -5,3 +5,27 @@ header ul {
   flex-direction: row;
   justify-content: space-around;
 }
+
+.grid_2_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 1rem;
+  justify-content: space-around;
+}
+.grid_2_2 a {
+  grid-column: span 1;
+  justify-self: center;
+}
+
+/* Produktliste */
+.flex_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.list_item {
+  
+}

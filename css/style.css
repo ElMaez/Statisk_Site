@@ -21,4 +21,38 @@ header a:hover {
 /*  */
 main {
   outline: dashed 1px red;
+  padding-top: var(--rem1);
+}
+
+/* Kategori */
+main a {
+  width: 20rem;
+  height: 2rem;
+}
+button {
+  width: 100%;
+  height: 100%;
+}
+
+/* Produkt liste */
+
+.flex_list img {
+  width: 100%;
+
+  border: dashed 1px blue;
+  object-fit: cover;
+}
+.flex_list div {
+  width: 10rem;
+  border: dashed 1px purple;
+}
+.list_item {
+  border: dashed 1px rgb(166, 33, 166);
+}
+.list_item h2 {
+  border: dashed 1px rgb(189, 69, 189);
+}
+
+.list_item p {
+  border: dashed 1px rgb(219, 113, 219);
 }
