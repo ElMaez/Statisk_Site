@@ -28,26 +28,25 @@ main {
   width: 20rem;
   height: 2rem;
 }
-button {
+#category button {
   width: 100%;
   height: 100%;
 }
 
 /* Produkt liste */
 
-h3 {
+#productlist h3 {
   text-align: center;
   font-size: var(--h3Size);
   padding-top: 10px;
 }
-a {
+#productlist a {
   text-decoration: none;
 }
 
-.content {
+#productlist .content {
   width: 20%;
   margin: var(--rem1);
-  text-align: center;
   border-radius: 20px;
   cursor: pointer;
   padding-top: 10px;
@@ -55,25 +54,24 @@ a {
   transition: 0.4s;
   background: #f2f2f2;
 }
-.content:hover {
+#productlist .content:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translate(0px, -8px);
 }
 
-img {
+#productlist img {
   width: 200px;
   height: 200px;
-  text-align: center;
   margin: 0 auto;
   display: block;
   object-fit: contain;
 }
-p {
+#productlist p {
   text-align: center;
   color: #b2bec3;
   padding-top: 0 8px;
 }
-h6 {
+#productlist h6 {
   font-size: 26px;
   text-align: center;
   color: #222f3e;
@@ -125,11 +123,27 @@ h6 {
   text-decoration: line-through;
 }
 
+/* Produkt */
+#product .content {
+  width: 80%;
+  margin: auto;
+  outline: dashed 1px green;
+}
+
+#product img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  outline: dashed 1px blue;
+  object-fit: contain;
+}
+
 @media (max-width: 1000px) {
   #productlist .content {
     width: 45%;
   }
 }
+
 @media (max-width: 750px) {
   #productlist .content {
     width: 100%;

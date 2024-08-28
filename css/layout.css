@@ -28,3 +28,23 @@ header ul {
   align-items: center;
   margin: 50px 0;
 }
+
+/* Product */
+
+#product .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  height: fit-content;
+}
+
+#product img {
+  grid-column: 1 /2;
+  grid-row: 1/-1;
+}
+
+#product .item1 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
