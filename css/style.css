@@ -52,7 +52,7 @@ main {
   padding-top: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: 0.4s;
-  background: #f2f2f2;
+  background: var(--Card);
 }
 #productlist .content:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -128,9 +128,8 @@ main {
   width: 90%;
   max-height: 80vh;
   margin: auto;
-
-  outline: dashed 1px lightsalmon;
-  border-bottom-right-radius: 2rem;
+  background-color: var(--Card);
+  border-radius: 5px 5px 2rem 5px;
 }
 #product .item1 {
   width: 100%;
@@ -138,18 +137,44 @@ main {
   margin: auto auto 0 auto;
 }
 
-#product img {
+#product .content img {
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  height: 95%;
+  margin: auto;
+  /* border-radius: 5px 5px 2rem 5px; */
   object-fit: contain;
 }
+#product h3 {
+  margin-bottom: 0.5rem;
+}
 
+#product .colors a {
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+  border-radius: 100%;
+  border: solid 2px black;
+}
+#product .colors a:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -5px);
+}
+#color1 {
+  background-color: rgb(16, 16, 16);
+}
+#color2 {
+  background-color: rgb(243, 237, 237);
+}
+#color3 {
+  background-color: rgb(160, 18, 18);
+}
+#color4 {
+  background-color: rgb(33, 151, 20);
+}
 #product button {
   width: 100%;
   height: 100%;
-
-  border-bottom-right-radius: 2rem;
+  border-radius: 5px 5px 2rem 5px;
 }
 
 #product select {
