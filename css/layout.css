@@ -47,4 +47,16 @@ header ul {
 #product .item1 {
   grid-column: span 1;
   grid-row: span 2;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+#product .item1 div {
+  grid-column: span 1;
+}
+#product .item1 a {
+  grid-column: 1/-1;
+  grid-row: 8/9;
 }

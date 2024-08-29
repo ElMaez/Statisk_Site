@@ -125,17 +125,35 @@ main {
 
 /* Produkt */
 #product .content {
-  width: 80%;
+  width: 90%;
+  max-height: 80vh;
   margin: auto;
-  outline: dashed 1px green;
+
+  outline: dashed 1px lightsalmon;
+  border-bottom-right-radius: 2rem;
+}
+#product .item1 {
+  width: 100%;
+  height: 90%;
+  margin: auto auto 0 auto;
 }
 
 #product img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  outline: dashed 1px blue;
   object-fit: contain;
+}
+
+#product button {
+  width: 100%;
+  height: 100%;
+
+  border-bottom-right-radius: 2rem;
+}
+
+#product select {
+  width: 5rem;
 }
 
 @media (max-width: 1000px) {
