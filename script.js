@@ -30,5 +30,10 @@ function showProduct(product) {
   const imgURI = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   clone.querySelector("img").src = imgURI;
   clone.querySelector("img").alt = `Image og ${product.productdisplayname}`;
+
+  clone
+    .querySelector(".productlink")
+    .setAttribute("href", `produkt.html?id=${product.id}`);
+
   productList.appendChild(clone);
 }
