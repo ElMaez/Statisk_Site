@@ -9,7 +9,8 @@ function getProduct() {
 }
 
 function view(produkt) {
-  document.querySelector("h3").textContent = produkt.productdisplayname;
+  document.querySelector("#displayname").textContent =
+    produkt.productdisplayname;
   document.querySelector(
     "img"
   ).src = `hhtps://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
