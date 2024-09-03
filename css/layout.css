@@ -50,9 +50,18 @@ header ul {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: 8% 60% 1fr;
   row-gap: 1rem;
 }
+
+#product .button {
+  grid-column: 1/-1;
+  grid-row: 3/-1;
+}
+#product .button button {
+  margin-top: 15%;
+}
+
 #product .colors {
   display: flex;
   flex-direction: row;
