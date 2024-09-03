@@ -9,14 +9,15 @@ header ul {
 .grid_2_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-
-  row-gap: 1rem;
-  justify-content: space-around;
+  grid-auto-rows: 20px;
+  gap: 1rem 2rem;
 }
-.grid_2_2 a {
+.grid_2_2 li {
   grid-column: span 1;
-  justify-self: center;
+}
+
+.grid_2_2 li:nth-child(2n + 1) {
+  justify-self: end;
 }
 
 /* Produktliste */
