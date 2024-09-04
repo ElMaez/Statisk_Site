@@ -3,6 +3,8 @@ console.log("Hello World!");
 
 const params = new URLSearchParams(document.location.search);
 const category = params.get("category");
+const subcategory = params.get("subcategory");
+const season = params.get("season");
 let productsURI = undefined;
 
 let productList;
@@ -15,6 +17,10 @@ function init() {
 
   if (params.has("category")) {
     productsURI = `https://kea-alt-del.dk/t7/api/products?category=${category}`;
+  } else if (params.has("subcategory")) {
+    productsURI = `https://kea-alt-del.dk/t7/api/products?subcategory=${subcategory}`;
+  } else if (params.has("season")) {
+    productsURI = `https://kea-alt-del.dk/t7/api/products?season=${season}`;
   } else {
     productsURI = `https://kea-alt-del.dk/t7/api/products?limit=5`;
   }

@@ -26,21 +26,22 @@ main {
 #category {
   margin-top: 2rem;
 }
-#categoryList {
+#category ul {
   width: 100%;
   list-style: none;
 }
-#categoryList .button {
+#category .button {
   width: 10rem;
   text-align: center;
   border-radius: 5px;
   background-color: #e9e1e1;
 }
-#categoryList .button:hover {
+#category .button:hover {
   background-color: rgb(171, 171, 171);
 }
 .button a {
   text-decoration: none;
+  text-align: center;
 }
 
 /* Produkt liste */
@@ -59,7 +60,7 @@ main {
 }
 
 #productlist .content {
-  width: 20%;
+  width: 25%;
   margin: var(--rem1);
   border-radius: 20px;
   cursor: pointer;
@@ -101,6 +102,10 @@ main {
   margin-top: 5px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+.price {
+  min-height: 5rem;
 }
 .buy_1 {
   background: #2183a2;
