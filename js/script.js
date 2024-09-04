@@ -1,7 +1,9 @@
 window.addEventListener("DOMContentLoaded", init);
 console.log("Hello World!");
 
-const productsURI = `https://kea-alt-del.dk/t7/api/products?limit=5`;
+const params = new URLSearchParams(document.location.search);
+const category = params.get("category");
+let productsURI = undefined;
 
 let productList;
 let productTemplate;
@@ -10,6 +12,12 @@ function init() {
   console.log("init");
   productList = document.querySelector(".gallery");
   productTemplate = document.querySelector("#template_product").content;
+
+  if (params.has("category")) {
+    productsURI = `https://kea-alt-del.dk/t7/api/products?category=${category}`;
+  } else {
+    productsURI = `https://kea-alt-del.dk/t7/api/products?limit=5`;
+  }
 
   fetch(productsURI)
     .then((res) => res.json())
@@ -25,7 +33,8 @@ function showProduct(product) {
   console.log("product", product);
   const clone = productTemplate.cloneNode(true);
   clone.querySelector("h3").textContent = product.productdisplayname;
-  clone.querySelector("p").textContent = product.season;
+  clone.querySelector("p").textContent =
+    product.season + " | " + product.category;
   clone.querySelector(".before").textContent = product.price + ",-";
 
   if (product.soldout) {
