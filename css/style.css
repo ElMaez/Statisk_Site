@@ -26,12 +26,21 @@ main {
 #category {
   margin-top: 2rem;
 }
-#category ul {
+#categoryList {
   width: 100%;
   list-style: none;
 }
-#category button {
+#categoryList .button {
   width: 10rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #e9e1e1;
+}
+#categoryList .button:hover {
+  background-color: rgb(171, 171, 171);
+}
+.button a {
+  text-decoration: none;
 }
 
 /* Produkt liste */
@@ -155,7 +164,7 @@ main {
   border: solid 2px black;
 }
 #product .colors a:hover,
-#product button:hover {
+#product .button:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translate(0px, -5px);
 }
@@ -171,7 +180,7 @@ main {
 #color4 {
   background-color: rgb(33, 151, 20);
 }
-#product button {
+#product .button {
   width: 100%;
   height: 3.5rem;
   background-color: #3b3e6e;
