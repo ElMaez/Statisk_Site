@@ -137,7 +137,7 @@ main {
   text-decoration: line-through;
 }
 
-/* Produkt */
+/* Produkt Singleview */
 #product .content {
   width: 90%;
   max-height: 80vh;
@@ -147,13 +147,9 @@ main {
 #product .item1 {
   width: 100%;
 
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 0 1rem;
   background-color: var(--Card);
   border-radius: 5px 5px 2rem 5px;
-}
-
-#product #text_container {
-  padding: 0 1rem 0 1rem;
 }
 #product .content img {
   width: 100%;
@@ -161,7 +157,7 @@ main {
   margin: 2rem auto;
   object-fit: contain;
 }
-#product .colors a {
+#product .colors li {
   width: 35px;
   height: 35px;
   margin-right: 1rem;

@@ -1,8 +1,20 @@
+// Her opretter vi variabler som vi skal bruge igennem featuren.
+
+// Et eksempel vi opretter her en constant (const) ved navnet categoryList
+// Den sætter vi til at være ligmed #categoryList som referrer til vores
+// ul tag i html'en som har det specifike id.
+
 const categoryList = document.querySelector("#categoryList");
 const subCategoryList = document.querySelector("#subCategoryList");
 const seasonList = document.querySelector("#seasonList");
+
+// Her opretter vi en const som er ligmed et javascript væktøj
+// som kigger i URL'ens adresse felt for at tjekke om den indeholder
+// Nogle parametre aka. ?etellerandetparameterher f.eks. limit=15 eller category.
 const params = new URLSearchParams(document.location.search);
 
+// Her henter vi data fra en anden url som indeholder den
+// information vi gerne vil have vist på hjemmesiden.
 fetch("https://kea-alt-del.dk/t7/api/seasons")
   .then((seas) => seas.json())
   .then((seasons) => {

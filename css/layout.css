@@ -73,23 +73,33 @@ header ul {
   grid-template-columns: 1fr;
   grid-template-rows: 8% 60% 1fr;
   row-gap: 1rem;
+  outline: solid 1px red;
 }
 
 #product .button {
   grid-column: 1/-1;
   grid-row: 3/-1;
-}
-#product .button button {
-  margin-top: 15%;
+  justify-self: bottom;
+  align-self: end;
 }
 
 #product .colors {
   display: flex;
   flex-direction: row;
 }
-#product .item1 div {
-  grid-column: span 1;
+
+#text_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
 }
+
+#text_container {
+  grid-column: 1/2;
+
+  outline: solid 2px blue;
+}
+
 #product .item1 a {
   grid-column: 1/-1;
   grid-row: 7/8;
