@@ -160,11 +160,13 @@ main {
 #product .colors li {
   width: 35px;
   height: 35px;
+
+  list-style: none;
   margin-right: 1rem;
   border-radius: 100%;
   border: solid 2px black;
 }
-#product .colors a:hover,
+#product .colors li:hover,
 #product .button:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translate(0px, -5px);

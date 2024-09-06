@@ -73,7 +73,6 @@ header ul {
   grid-template-columns: 1fr;
   grid-template-rows: 8% 60% 1fr;
   row-gap: 1rem;
-  outline: solid 1px red;
 }
 
 #product .button {
@@ -92,15 +91,22 @@ header ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
+  row-gap: 2rem;
 }
 
 #text_container {
   grid-column: 1/2;
-
-  outline: solid 2px blue;
 }
 
 #product .item1 a {
   grid-column: 1/-1;
-  grid-row: 7/8;
+  grid-row: span 1;
+}
+
+#product #choose {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  outline: dashed 1px yellow;
 }
