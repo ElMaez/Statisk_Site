@@ -20,12 +20,10 @@ header a:hover {
 
 main {
   padding-top: var(--rem1);
+  padding-bottom: 2rem;
 }
 
 /* Kategori */
-#category {
-  margin-top: 2rem;
-}
 #category ul {
   width: 100%;
   list-style: none;

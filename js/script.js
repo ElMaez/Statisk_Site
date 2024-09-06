@@ -11,7 +11,6 @@ let productList;
 let productTemplate;
 
 function init() {
-  console.log("init");
   productList = document.querySelector(".gallery");
   productTemplate = document.querySelector("#template_product").content;
 

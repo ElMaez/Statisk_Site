@@ -13,7 +13,8 @@ header ul {
   gap: 1rem 2rem;
 }
 .grid_2_2 li,
-.grid_5_2 li {
+.grid_5_2 li,
+#category ul {
   grid-column: span 1;
 }
 
@@ -34,10 +35,6 @@ header ul {
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   row-gap: 4rem;
-}
-
-#category ul {
-  grid-row: span 1;
 }
 
 /* Produktliste */
